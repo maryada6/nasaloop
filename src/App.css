@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+.cards{
+  display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap: 20px;
+   margin: 10px 0;
+}
+
+.card{
+  flex: 0 1 calc(23% - 1em);
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .card {
+      flex: 0 1 calc(25% - 1em);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+      flex: 0 1 calc(50% - 1em);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+      flex: 0 1 calc(95% - 1em);
+  }
+}
+
+
